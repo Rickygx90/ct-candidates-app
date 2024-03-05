@@ -19,3 +19,27 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+----------------------------------------------------------------------------------------------------------------------------
+## Steps to run this laravel proyect:
+
+ - Copy and paste .env.example file and later replace the name of the new file with .env
+
+ - In the new .env file enter your database configuration:
+
+        DB_CONNECTION=mysql
+        DB_HOST=your_db_host
+        DB_PORT=your_db_port
+        DB_DATABASE=ct_candidates_app
+        DB_USERNAME=your_db_username
+        DB_PASSWORD=your_db_password
+
+ - Execute composer install
+
+ - Execute php artisan migrate
+
+ - Execute php artisan key:generate
+
+ - Execute php artisan serve
+
+ - Test the backend, copy the URL and PORT to configure later in the react app (Ex: 127.0.0.1:8000)
